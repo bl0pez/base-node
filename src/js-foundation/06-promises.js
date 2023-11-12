@@ -5,7 +5,6 @@ const getPokemonById = (id, cb) => {
         .then((response) => response.json())
         .then((pokemon) => cb(pokemon.name))
         .catch((error) => console.error(error))
-
 }
 
 module.exports = getPokemonById;
