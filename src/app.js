@@ -6,10 +6,14 @@
 // const { getUUID, getAge } = require('./plugins');
 // const getPokemonById = require("./js-foundation/06-promises");
 // const getPokemonById = require("./js-foundation/07-async");
-const getPokemonById = require("./js-foundation/08-patron-adaptador-fetch");
+// const getPokemonById = require("./js-foundation/08-patron-adaptador-fetch");
 
-getPokemonById(1)
-    .then(console.log);
+const { buildLogger } = require('./plugins');
+
+const logger = buildLogger('app.js');
+
+logger.log('holamundo')
+logger.error('un error')
 
 
 
