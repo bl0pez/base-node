@@ -1,25 +1,21 @@
 {
-  "name": "node",
+  "name": "03-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Clonar el repositorio.\r 2. Ejecutar el comando `npm install` para instalar las dependencias.\r 3. Ejecutar el comando `npm run dev` para ejecutar el proyecto.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js",
-    "start:dev": "nodemon src/app.js",
-    "start:stag": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "dependencies": {
-    "axios": "^1.6.1",
-    "get-age": "^1.0.1",
-    "uuid": "^9.0.1",
-    "winston": "^3.11.0"
+    "@types/node": "^20.10.2",
+    "nodemon": "^3.0.2",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   }
 }
