@@ -8,14 +8,12 @@
 // const getPokemonById = require("./js-foundation/07-async");
 // const getPokemonById = require("./js-foundation/08-patron-adaptador-fetch");
 
-const { buildLogger } = require('./plugins');
+// const { buildLogger } = require('./plugins');
 
-const logger = buildLogger('app.js');
+// const logger = buildLogger('app.js');
 
-logger.log('holamundo')
-logger.error('un error')
-
-
+// logger.log('holamundo')
+// logger.error('un error')
 
 // ! Referencia a la función factory y uso.
 // const makePerson = buildMakePerson({ getUUID, getAge });
